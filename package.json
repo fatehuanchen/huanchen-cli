@@ -1,6 +1,6 @@
 {
   "name": "huanchen-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自制clidemo",
   "main": "index.js",
   "scripts": {
