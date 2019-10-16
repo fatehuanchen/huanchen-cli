@@ -1,0 +1,28 @@
+#!/usr/bin/env node --harmony
+
+'use strict'
+
+process.env.NODE_PATH = __dirname + '/../node_modules/'
+
+const program = require('commander')
+
+// 获取version
+program.version(require('../package').version)
+
+program.usage('<command>')
+
+program
+    .command('init')
+    .description('构建一个已有git项目')
+    .alias('i')
+    .action(()=>{
+      // 执行init
+      require('../command/init')()
+    })
+
+  //  必须加上这些，才可以执行commands
+    program.parse(process.argv)
+
+    if (!program.args.length) {
+        program.help()
+    }
