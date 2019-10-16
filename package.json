@@ -10,5 +10,15 @@
     "cli"
   ],
   "author": "1540226204@qq.com",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatehuanchen/huanchen-cli.git"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.19.0"
+  }
 }
