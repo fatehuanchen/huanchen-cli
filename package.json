@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/fatehuanchen/huanchen-cli.git"
   },
+  "bin": {
+    "initPack": "bin/initPack"
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "co": "^4.6.0",
