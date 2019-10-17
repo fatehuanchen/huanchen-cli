@@ -41,7 +41,7 @@ module.exports = () => {
 
     install = install || 'npm'
 
-    let sh1 = `git clone -b ${branch} ${gitUrl}`
+    let sh1 = `git clone -b ${branch} ${gitUrl} ${name}`
     let sh2 = `cd ${name} && ${install} install`
 
     console.log(chalk.white('\n 开始拉取代码...'))
